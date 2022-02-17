@@ -27,7 +27,10 @@ export function tripleNumbers(numbers: number[]): number[] {
  * the number cannot be parsed as an integer, convert it to 0 instead.
  */
 export function stringsToIntegers(numbers: string[]): number[] {
-    return [];
+    //use Number() to figure out if its a number. otherwise returns NaN. use isInteger to figure out if integer. returns bool
+    const isInt = (item: string): number =>
+        !isNaN(Number(item)) && Number(item) % 1 === 0 ? Number(item) : 0;
+    return numbers.map(isInt);
 }
 
 /**

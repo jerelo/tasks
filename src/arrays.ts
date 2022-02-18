@@ -72,7 +72,11 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
  * 4 letters long.
  */
 export function countShortWords(words: string[]): number {
-    return 0;
+    return words.reduce(
+        (currentTotal: number, word: string) =>
+            word.length < 4 ? currentTotal + 1 : currentTotal,
+        0
+    );
 }
 
 /**
@@ -81,7 +85,14 @@ export function countShortWords(words: string[]): number {
  * then return true.
  */
 export function allRGB(colors: string[]): boolean {
-    return false;
+    const sum = colors.reduce(
+        (currentTotal: number, color: string) =>
+            color !== "red" && color !== "blue" && color !== "green"
+                ? currentTotal + 1
+                : currentTotal,
+        0
+    );
+    return sum < 1;
 }
 
 /**

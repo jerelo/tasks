@@ -103,7 +103,15 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    return "";
+    const sum = addends.reduce(
+        (currentTotal: number, num: number) => currentTotal + num,
+        0
+    );
+    if (addends.length>0){
+        return sum + "=" + addends.join("+");
+    } else {
+        return sum + "=" + addends.join("+") + 0;
+    }
 }
 
 /**
@@ -116,5 +124,23 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    return [];
+    const newValues = [...values];
+    const index: number = values.findIndex((value: number) => value < 0);
+    if (index > -1) {
+        const sum = values
+            .slice(0, index)
+            .reduce(
+                (currentTotal: number, num: number) => currentTotal + num,
+                0
+            );
+        newValues.splice(index+1, 0, sum);
+    } else {
+        const sum = values.reduce(
+            (currentTotal: number, num: number) => currentTotal + num,
+            0
+        );
+        newValues.splice(newValues.length, 0, sum);
+    }
+
+    return newValues;
 }

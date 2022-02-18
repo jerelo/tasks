@@ -41,16 +41,30 @@ export function stringsToIntegers(numbers: string[]): number[] {
  */
 // Remember, you can write functions as lambdas too! They work exactly the same.
 export const removeDollars = (amounts: string[]): number[] => {
-    return [];
+    const newAmounts = amounts.map((ammount: string): string =>
+        ammount.replace("$", "")
+    );
+    return newAmounts.map((ammount: string): number =>
+        !isNaN(Number(ammount)) ? Number(ammount) : 0
+    );
 };
 
 /**
  * Consume an array of messages and return a new list of the messages. However, any
  * string that ends in "!" should be made uppercase. Also, remove any strings that end
  * in question marks ("?").
- */
+//  */
 export const shoutIfExclaiming = (messages: string[]): string[] => {
-    return [];
+    const question = (message: string): boolean => {
+        return message[message.length - 1] !== "?";
+    };
+    const exclamation = (message: string): string => {
+        return message[message.length - 1] === "!"
+            ? message.toUpperCase()
+            : message;
+    };
+    //const newMessages: string[] = messages.filter(question);
+    return [...messages.filter(question)].map(exclamation);
 };
 
 /**

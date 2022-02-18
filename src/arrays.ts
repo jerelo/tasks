@@ -107,7 +107,7 @@ export function makeMath(addends: number[]): string {
         (currentTotal: number, num: number) => currentTotal + num,
         0
     );
-    if (addends.length>0){
+    if (addends.length > 0) {
         return sum + "=" + addends.join("+");
     } else {
         return sum + "=" + addends.join("+") + 0;
@@ -133,7 +133,7 @@ export function injectPositive(values: number[]): number[] {
                 (currentTotal: number, num: number) => currentTotal + num,
                 0
             );
-        newValues.splice(index+1, 0, sum);
+        newValues.splice(index + 1, 0, sum);
     } else {
         const sum = values.reduce(
             (currentTotal: number, num: number) => currentTotal + num,

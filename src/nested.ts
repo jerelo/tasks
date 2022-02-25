@@ -151,7 +151,18 @@ export function publishAll(questions: Question[]): Question[] {
  * are the same type. They can be any type, as long as they are all the SAME type.
  */
 export function sameType(questions: Question[]): boolean {
-    return false;
+    if (questions.length === 0) {
+        return true;
+    }
+    const firstQuestionType = questions[0].type;
+    const sum = questions.reduce(
+        (currentTotal: number, question: Question): number =>
+            firstQuestionType === question.type
+                ? currentTotal
+                : currentTotal + 1,
+        0
+    );
+    return sum === 0;
 }
 
 /***

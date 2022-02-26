@@ -251,8 +251,33 @@ export function editOption(
     targetId: number,
     targetOptionIndex: number,
     newOption: string
-) {
-    return [];
+): Question[] {
+    const targetIndex = questions.findIndex(
+        (question: Question): boolean => question.id === targetId
+    );
+    const targetQuestion = questions[targetIndex];
+    let newQuestion;
+    if (targetOptionIndex === -1) {
+        newQuestion = {
+            ...targetQuestion,
+            options: [...targetQuestion.options, newOption]
+        };
+    } else {
+        const newOptions = [
+            ...targetQuestion.options.slice(0, targetOptionIndex),
+            newOption,
+            ...targetQuestion.options.slice(
+                targetOptionIndex + 1,
+                targetQuestion.options.length
+            )
+        ];
+        newQuestion = { ...targetQuestion, options: newOptions };
+    }
+    return [
+        ...questions.slice(0, targetIndex),
+        newQuestion,
+        ...questions.slice(targetIndex + 1, questions.length)
+    ];
 }
 
 /***

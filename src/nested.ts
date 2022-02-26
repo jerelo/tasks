@@ -190,7 +190,15 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    const index = questions.findIndex(
+        (question: Question): boolean => question.id === targetId
+    );
+    const newQuestion = { ...questions[index], name: newName };
+    return [
+        ...questions.slice(0, index),
+        newQuestion,
+        ...questions.slice(index + 1, questions.length)
+    ];
 }
 
 /***

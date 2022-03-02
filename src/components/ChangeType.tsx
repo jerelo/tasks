@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 import { QuestionType } from "../interfaces/question";
 
 export function ChangeType(): JSX.Element {
-    return <div>Change Type</div>;
     const [answer, setAnswer] = useState<QuestionType>("short_answer_question");
 
     function changeAnswerType(): void {
@@ -13,7 +12,6 @@ export function ChangeType(): JSX.Element {
             setAnswer("short_answer_question");
         }
     }
-
     return (
         <div>
             <Button onClick={changeAnswerType}>Change Type</Button>

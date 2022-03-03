@@ -11,7 +11,6 @@ export function bookEndList(numbers: number[]): number[] {
     } else {
         return [numbers[0], numbers[length - 1]];
     }
-    return numbers;
 }
 
 /**

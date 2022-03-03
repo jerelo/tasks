@@ -10,16 +10,16 @@ export function CycleHoliday(): JSX.Element {
         } else if (holiday === "🕎") {
             setHoliday("🎆");
         } else if (holiday === "🎆") {
-            setHoliday("1️⃣");
-        } else if (holiday === "1️⃣") {
+            setHoliday("🕛");
+        } else if (holiday === "🕛") {
             setHoliday("🦃");
         } else {
             setHoliday("🎃");
         }
     }
 
-    function nextTime() {
-        if (holiday === "1️⃣") {
+    function nextTime(): void {
+        if (holiday === "🕛") {
             setHoliday("🎆");
         } else if (holiday === "🎆") {
             setHoliday("🎃");
@@ -28,7 +28,7 @@ export function CycleHoliday(): JSX.Element {
         } else if (holiday === "🦃") {
             setHoliday("🕎");
         } else {
-            setHoliday("1️⃣");
+            setHoliday("🕛");
         }
     }
 
@@ -37,7 +37,7 @@ export function CycleHoliday(): JSX.Element {
             <Button onClick={nextAlphabet}>Advance by Alphabet</Button>
             <Button onClick={nextTime}>Advance by Year</Button>
             <div>
-                Holiday: <span>{holiday}</span>
+                <span>Holiday: {holiday}</span>
             </div>
         </div>
     );

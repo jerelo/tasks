@@ -15,6 +15,7 @@ export function CheckAnswer({
     }
     return (
         <div>
+            <h3>Check Answer</h3>
             <div>The correct answer is {expectedAnswer}.</div>
             <Form.Group controlId="answer">
                 <Form.Label>Enter your answer here</Form.Label>

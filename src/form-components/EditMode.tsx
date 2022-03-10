@@ -36,7 +36,7 @@ export function EditMode(): JSX.Element {
             <Form.Check
                 type="checkbox"
                 id="isStudentCheck"
-                label="Are you a student?"
+                label={<span>{edit && "Are you a student?"}</span>}
                 checked={student}
                 onChange={updateStudent}
                 hidden={!edit}
@@ -44,7 +44,7 @@ export function EditMode(): JSX.Element {
 
             {!edit && (
                 <div>
-                    ({name} is {student ? "" : "not"} a student)
+                    {name} is {student ? "" : "not"} a student
                 </div>
             )}
         </div>

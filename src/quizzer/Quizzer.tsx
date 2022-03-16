@@ -1,8 +1,8 @@
 import React from "react";
-import sketch1 from "./App sketch/Slide1.png";
-import sketch2 from "./App sketch/Slide2.png";
-import sketch3 from "./App sketch/Slide3.png";
-import sketch4 from "./App sketch/Slide4.png";
+import sketch1 from "./Slide1.png";
+import sketch2 from "./Slide2.png";
+import sketch3 from "./Slide3.png";
+import sketch4 from "./Slide4.png";
 
 export function Quizzer(): JSX.Element {
     return (

@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Simple Math",
+        "quizNumber": 1,
+        "description": "Test your elementary math skills",
+        "achievedPoints": 0,
+        "totalPoints": 0,
+        "viewing": false,
+        "questions": [
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            }
+        ]
+    },
+    {
+        "title": "US Geography",
+        "quizNumber": 2,
+        "description": "Test your knowledge of the United States",
+        "achievedPoints": 0,
+        "totalPoints": 0,
+        "viewing": false,
+        "questions": [
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            }
+        ]
+    },
+    {
+        "title": "Pig Latin",
+        "quizNumber": 3,
+        "description": "Oink Oink",
+        "achievedPoints": 0,
+        "totalPoints": 0,
+        "viewing": false,
+        "questions": [
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            },
+            {
+                "points": 1,
+                "body": "1+1"
+            }
+        ]
+    }
+]

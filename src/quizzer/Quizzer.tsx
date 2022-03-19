@@ -19,6 +19,18 @@ export function Quizzer(): JSX.Element {
             <img src={sketch2}></img>
             <img src={sketch3}></img>
             <img src={sketch4}></img>
+            <div>Completed Features</div>
+            <ul>
+                <li>Application Sketch</li>
+                <li>
+                    List of quiz visible with title, description, number of
+                    questions. Tested.
+                </li>
+                <li>
+                    List of questions visible for each quiz on button click.
+                    Name, body, and points visible. Tested.
+                </li>
+            </ul>
         </div>
     );
 }

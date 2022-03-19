@@ -9,15 +9,39 @@
         "questions": [
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 1,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 2,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 3,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Multiple Choice",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": ["1","2","3","4"]
             }
         ]
     },
@@ -31,15 +55,39 @@
         "questions": [
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 1,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 2,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 3,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             }
         ]
     },
@@ -53,15 +101,39 @@
         "questions": [
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 1,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 2,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             },
             {
                 "points": 1,
-                "body": "1+1"
+                "body": "1+1",
+                "questionNumber": 3,
+                "published": true,
+                "correct": false,
+                "editing": false,
+                "type": "Short Answer",
+                "expectedAnswer": "2",
+                "userAnswer": "",
+                "options": []
             }
         ]
     }

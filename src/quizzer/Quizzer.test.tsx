@@ -2,7 +2,6 @@ import React from "react";
 //import { render, screen } from "@testing-library/react";
 import { Quizzer } from "./Quizzer";
 import { render, screen } from "@testing-library/react";
-import { Quiz } from "./quiz";
 
 describe("Quizzer Tests", () => {
     beforeEach(() => {

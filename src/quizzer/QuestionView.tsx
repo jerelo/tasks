@@ -1,6 +1,6 @@
 import { Question } from "./question";
 import { Row, Col, Button } from "react-bootstrap";
-import React, { useState } from "react";
+import React from "react";
 
 export function QuestionView({
     question
